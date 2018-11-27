@@ -7,7 +7,7 @@
 .first ul{
     display: flex;
     list-style-type: none;
-    padding:0 15vw;
+    padding:0 12vw;
     margin:0;
     justify-content: center;
     width:100%;
@@ -15,6 +15,39 @@
 .first li:first-child{
     margin-right: auto;
 }
-nav li:not(:last-child){
+ li:not(:last-child){
     margin-right: 20px;
+}
+.first a{
+    font-family: 'Niramit', sans-serif;
+    text-decoration: none;
+    font-size: 1.25em;
+    display: block;
+    color:#333;
+    position: relative;
+}
+.first a::before{
+    content:'';
+    border-bottom: 3px solid;
+    width: calc(100%);
+    position: absolute;
+    left:0px;
+    bottom:0;
+    transform: translateY(5px);
+    transition: opacity, transform 0.3s;
+    opacity:0;
+}
+.logo::before{
+    display:none;
+}
+.first a:hover::before{
+    transform: translateY(0);
+    opacity:1;
+}
+
+.underline{
+    position: absolute;
+    border-bottom: 3px solid transparent;
+    z-index: -1;
+    transform: translateX(-60px);
 }
