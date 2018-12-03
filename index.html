@@ -35,7 +35,7 @@
 <nav class="first nav" id="first">
 <ul>
     <li>
-        <a href="index.html" class="logo"> Logo</a>
+        <a href="index.html" class="logo" style="color: #30cfd0; padding:0; margin:0; font-family: 'Roboto', sans-serif; font-size:3em;"> pri</a>
     </li>
     <li>
         <a href="#">Home</a>
@@ -62,17 +62,19 @@
 <a href="#"> Contact</a> 
 </nav>
 <div class="hamburger">
+    <p style ="font-family: 'Roboto', sans-serif; color: white; font-size:2em;"> pri</p>
     <span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;</span>
 </div>
 </div>
 </header> 
 
 <main class="main">
+<!--About-->
 <div class="about">
     <div class="about-us">
         <p><span class="h2"> About Us</span></p>
         <div class="divider"> </div>
-        <p style="line-height: 2; color:#333">
+        <p style="color:#333">
             We are a team of creative professionals. 
             We empower you
             and your customers by 
@@ -80,21 +82,21 @@
         <div id="animated">
             <div id="text"></div><div id="cursor"></div>
         </div>
-        <div class="divider"></div>
-  
-       
+        
     </div>
+    <!--Team section-->
     <div class="team">
         <p><span>Meet our Team</span></p>
-       <p style="font-family: 'Roboto', sans-serif; font-size:2.4em;
+        <div class="divider"></div>
+       <p style="font-family: 'Roboto', sans-serif; font-size:3em;
        color: #333; width:53vw;">
            Our people are our biggest assets.
            These are individuals who have adopted a 
            lifestyle of excellence
        </p>
-       <div class="divider"></div>
+       <div style="height:8em;"></div>
        <div class="team-picture">
-           <div class="card">
+           <div class="card" tooltip="President. Monroe, New Jersey">
             <a href="javascript:void(0)">
                 <img src ="images/team1.jpg" alt="team1">
             </a>
@@ -102,19 +104,19 @@
                 Chintan Parikh
             </p>
            </div>
-           <div class="card">
+           <div class="card" tooltip ="Art Director. Westfield, New Jersey">
               <a href="javascript:void(0)">
                   <img src="images/team2.jpg">
               </a>
               <p>Élena Nazzaro</p> 
            </div>
-           <div class="card">
+           <div class="card" tooltip ="Development Officer. Chennai, India">
                <a href ="javascript:void(0)">
                    <img src ="images/team3.jpg">
                </a>
                <p>Raman Nidamarthi</p>
            </div>
-           <div class="card">
+           <div class="card" tooltip ="Content Strategies, Chester, VT">
               <a href="javascript:void(0)">
                   <img src="images/team4.jpg">
               </a>
@@ -123,11 +125,93 @@
        </div>
     </div>
 </div>
+<!--End of About-->
+
  
 
 
 </main> 
-
+<div class="divider"></div>
+<section>
+<div class ="divider"></div>
+<div class="services" id ="services">
+        <p><span>What We Do</span></p>
+        <div class="divider"></div>
+        <p style="color:#333;font-weight: bold; font-size: 3em; font-family:'Roboto', sans-serif;"> We are good at what we do. We love what we do.</p>
+        <p style="color:#333; font-family: 'Roboto', sans-serif; font-size:1.7em; padding:2em 2em 0 2em;"> Our services are tailor made to the needs of our
+            esteemed clients. We approach every client's task
+            with a unique perspective, and with a sole goal: to 
+            supercede expectations. <br />
+            For services we don't offer, we will always refer you
+            to the best hands in the industry. 
+        </p>
+ </div>
+ <div class="divider"></div>
+ <div class="list-services">
+     <div class="list-card" services ="Responsive Web Design Brand Identity User Experience Data Visualization Branding">
+        <img src="images/web design.png">
+        <p> Web Design</p>
+     </div>
+     <div class="list-card" services ="Marketing Strategy Keywords Analysis Branding Campaign Copywriting">
+        <img src="images/research.png">
+    <p> Market Research</p>
+     </div>
+     <div class="list-card" services ="User Experience Optimization of Load Speed 404 Error Best Practices Google Adwords">
+        <img src="images/seo.png">
+        <p> Web Optimization </p>
+     </div>
+     <div class="list-card" services ="Android App Development iOS App Development Rapid Prototyping Software Architecture">
+        <img src="images/app.png">
+        <p> Web and app Development </p>
+     </div>
+     <div class="list-card" services ="Active Debugging Maintenance of Code Maximum Security of Site Fixing of Broken Links">
+            <img src="images/maintenance.png">
+            <p> Maintenance </p>
+         </div>
+ </div>
+     <div class="portfolio">
+        <p><span>Portfolio</span></p> 
+        <p style="width:63%; color:#333; font-family: 'Roboto', sans-serif; font-size:3em; padding:6vh 0 0 0;"> Our clients love us because we go above and beyond their expectations. For us,
+            consistency and continouse improvement trumps every other thing.  
+        </p>   
+    <div class="divider"></div>
+    <div class="divider"></div>
+    <div class="portfolio-box">
+      <div class ="box a" >
+        <img src="images/port.jpg">
+        <p> Branding </p>
+        <div class="overlay"></div>
+      </div>
+      <div class ="box b" >
+        <img src="images/port2.jpg">
+        <p> Branding </p>
+        <div class="overlay"></div>
+    </div>
+    <div class ="box c" >
+       <img src="images/laptop2.jpg">   
+       <p> Responsive Web <br /> Design</p>
+       <div class="overlay"></div>
+    </div>
+    <div class ="box d" >
+       <img src ="images/laptop.jpg"> 
+       <p> UX Research</p>  
+       <div class="overlay"></div>
+    </div>
+    <div class ="box e" >
+        <img src="images/port5.jpg"> 
+        <p> App Design <br />and Development</p>
+        <div class="overlay"></div>
+   </div>
+    <div class ="box f" >
+         <img src="images/people.jpg"> 
+         <p> Prototyping</p>
+         <div class="overlay"></div>
+    </div>
+    
+    </div>
+     </div>
+ 
+</section>
 <footer>
 
 </footer>

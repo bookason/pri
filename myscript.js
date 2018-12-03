@@ -44,30 +44,13 @@ function hide(){
        }
    })
 }
-function showr(){
-    var x =window.pageYOffset;
-    if(x>100){
-        hamburger.style.opacity="1"
-    }
-    else{
-        hamburger.style.opacity="0"
-    }
-    window.addEventListener("scroll", function(){
-        var x =window.pageYOffset;
-        if(x>100){
-            h.classList.add("scroll")
-        }
-        else{
-            h.classList.remove("scroll")
-        }
-    })
-}
+
 
 window.onload = function (){
     setPaddingTop();
     scroller();
     hide();
-    show ();
+    
 }
 window.onresize = function (){
         setPaddingTop;
