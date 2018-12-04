@@ -160,7 +160,6 @@ padding: 0 5vw;
 /*about us*/
 .about{
     position: relative;
-    background:blue;
     padding-top:0px;
 }
 .about-us{
@@ -408,6 +407,17 @@ margin-top: 15vh;
     opacity:0;
     transition: opacity 0.3s ease-in;
 }
+.overlay-footer{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:666;
+    background: rgba(0,0,0,0.8);
+    opacity:0;
+    transition: opacity 0.3s ease-in;
+}
 .portfolio-box p{
     position: absolute;
     top:0;
@@ -459,6 +469,43 @@ opacity: 1;
     grid-column: 3/span 1;
     grid-row: 3 /span 1;
     height:90%;
+}
+footer{
+    position: relative;
+    top:3650px;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    padding:0 5vw;
+}
+.contact-form{
+    width:50%;
+    background: green;
+    border-radius: 10px;
+    background:#fff;
+    position: relative;
+}
+.contact{
+    width:40%;
+    background: cyan;
+}
+::placeholder{
+    color:#333;
+    font-family: 'Niramit', sans-serif;
+    font-size:1.5em;
+}
+input[type="text"], input[type="email"]{
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    width:25vw;
+    padding-top: 15px;
+}
+textarea{
+   background:#fff;
+    width: 25vw;;
+    height:200px;
 }
 @keyframes transformation-before{
     to{
