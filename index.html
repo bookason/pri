@@ -4,7 +4,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Roboto|Anton|Oxygen|Amaranth|Niramit" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styling/style.css" />
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PRI</title>
@@ -45,25 +45,25 @@
         <a href="#">Home</a>
     </li>
     <li>
-        <a href="#"> About</a>
+        <a href="#about"> About</a>
     </li>
     <li>
-        <a href="#"> Services</a>
+        <a href="#services"> Services</a>
     </li>
     <li>
-        <a href="#"> Portfolio</a>
+        <a href="#portfolio"> Portfolio</a>
     </li>
     <li>
-        <a href="#"> Contact</a>
+        <a href="#contact"> Contact</a>
     </li>
 </ul>
 </nav>
 <nav class="second nav" id="toggle-menu">
  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
- <a href="#"> About</a>
- <a href="#"> Services</a>
-<a href="#"> Clients</a>
-<a href="#"> Contact</a> 
+ <a href="#about" onclick="closeNav()"> About</a>
+ <a href="#services" onclick="closeNav()"> Services</a>
+<a href="#portfolio" onclick="closeNav()"> Portfolio</a>
+<a href="#contact" onclick="closeNav()"> Contact</a> 
 </nav>
 <div class="hamburger">
     <p style ="font-family: 'Roboto', sans-serif; color: white; font-size:2em;"> pri</p>
@@ -74,7 +74,7 @@
 
 <main class="main">
 <!--About-->
-<div class="about">
+<div class="about" id="about">
     <div class="about-us">
         <p><span class="h2"> About Us</span></p>
         <div class="divider"> </div>
@@ -177,7 +177,7 @@
             <p> Maintenance </p>
          </div>
  </div>
-     <div class="portfolio">
+     <div class="portfolio" id="portfolio">
         <p><span>Portfolio</span></p> 
         <p style="width:63%; color:#333; font-family: 'Roboto', sans-serif; font-size:3em; padding:6vh 0 0 0;"> Our clients love us because we go above and beyond their expectations. For us,
             consistency and continious improvement trumps every other thing.  
@@ -222,7 +222,7 @@
 </section>
 <footer>
 <div class="overlay-footer"> </div>
-<div class="top-footer"> 
+<div class="top-footer" id="contact"> 
 <div class="contact-form">
 <div class="contact-box" style="color:#fff; font-family: 'Roboto', sans-serif; font-size:1.7em; text-align:center; padding:1.2em;">
     Get in Touch
