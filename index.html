@@ -60,9 +60,9 @@
 </nav>
 <nav class="second nav" id="toggle-menu">
  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
- <a href="#about" onclick="closeNav()"> About</a>
- <a href="#services" onclick="closeNav()"> Services</a>
-<a href="#portfolio" onclick="closeNav()"> Portfolio</a>
+ <a href="#about" onclick="closeNav()"> About</a><hr/>
+ <a href="#services" onclick="closeNav()"> Services</a> <hr />
+<a href="#portfolio" onclick="closeNav()"> Portfolio</a> <hr />
 <a href="#contact" onclick="closeNav()"> Contact</a> 
 </nav>
 <div class="hamburger">
@@ -78,7 +78,7 @@
     <div class="about-us">
         <p><span class="h2"> About Us</span></p>
         <div class="divider"> </div>
-        <p style="color:#333">
+        <p style="color:#333; font-family: 'Roboto', sans-serif; font-size:3em;">
             We are a team of creative professionals. 
             We empower you
             and your customers by 
@@ -94,7 +94,7 @@
         <p><span>Meet our Team</span></p>
         <div class="divider"></div>
        <p style="font-family: 'Roboto', sans-serif; font-size:3em;
-       color: #333; width:53vw;">
+       color: #333; width:53vw;" id="team-para">
            Our people are our biggest assets.
            These are individuals who have adopted a 
            lifestyle of excellence
@@ -111,24 +111,34 @@
             <p>
                 Chintan Parikh
             </p>
+            <p id="para2">
+                President. New Jersey
+            </p>
            </div>
            <div class="card" tooltip ="Art Director. Westfield, New Jersey">
               <a href="javascript:void(0)">
                   <img src="images/team2.jpg">
               </a>
               <p>Élena Nazzaro</p> 
+              <p id ="para2"> Art Director. New Jersey</p>
            </div>
            <div class="card" tooltip ="Development Officer. Chennai, India">
                <a href ="javascript:void(0)">
                    <img src ="images/team3.jpg">
                </a>
                <p>Raman Nidamarthi</p>
+               <p id="para2">
+                    Development Officer. India
+                </p>
            </div>
-           <div class="card" tooltip ="Content Strategies, Chester, VT">
+           <div class="card" tooltip ="Content Strategist, Chester, VT">
               <a href="javascript:void(0)">
                   <img src="images/team4.jpg">
               </a>
               <p>Dany Petraska</p> 
+              <p id="para2">
+                    Content Strategist. Chester.
+                </p>
            </div>
        </div>
     </div>
@@ -146,12 +156,12 @@
         <p><span>What We Do</span></p>
         <div class="divider"></div>
         <p style="color:#333;font-weight: bold; font-size: 3em; font-family:'Roboto', sans-serif;"> We are good at what we do. We love what we do.</p>
-        <p style="color:#333; font-family: 'Roboto', sans-serif; font-size:1.7em; padding:2em 2em 0 2em;"> Our services are tailor made to the needs of our
+        <p style="color:#333; font-family: 'Roboto', sans-serif; font-size:1.7em; padding:2em 2em 0 2em;"> <i> "Our services are tailor made to the needs of our
             esteemed clients. We approach every client's task
             with a unique perspective, and with a sole goal: to 
             supercede expectations. <br />
             For services we don't offer, we will always refer you
-            to the best hands in the industry. 
+            to the best hands in the industry."</i>
         </p>
  </div>
  <div class="divider"></div>
@@ -179,7 +189,7 @@
  </div>
      <div class="portfolio" id="portfolio">
         <p><span>Portfolio</span></p> 
-        <p style="width:63%; color:#333; font-family: 'Roboto', sans-serif; font-size:3em; padding:6vh 0 0 0;"> Our clients love us because we go above and beyond their expectations. For us,
+        <p style="width:63%; color:#333; font-family: 'Roboto', sans-serif; font-size:3em; padding:6vh 0 0 0;" id="portfolio-para"> Our clients love us because we go above and beyond their expectations. For us,
             consistency and continious improvement trumps every other thing.  
         </p>   
     <div class="divider"></div>
@@ -230,9 +240,9 @@
 <div class="divider"></div>
 <div>
     <form>
-        <p><input type ="text" placeholder="Name:"></p>
+        <p><input type ="text" placeholder="Name"></p>
         <div class="divider"></div>
-        <p> <input type ="email" placeholder="Email:"></p>
+        <p> <input type ="email" placeholder="Email"></p>
         <div class="divider"></div>
         <textarea rows="4" cols="50" placeholder="Your Message"></textarea>
         <button type="submit"> Submit
@@ -251,7 +261,7 @@
 <p> Email: hello@pri.com</p>
 </div>
 </div>
-<div>
+<div id="last">
     <p> Copyright &copy; 2018</p>
     <p> Designed by Christopher Ike</p>
 </div>
